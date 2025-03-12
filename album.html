@@ -1,0 +1,373 @@
+<!-- 
+  Template Name: Property
+  Template Author: Untree.co
+  Template URI: https://untree.co/
+  License: https://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="1.jpg" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon & Font CSS -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <!-- Theme CSS Files -->
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Kannika Land and Building Developers - Album</title>
+
+    <!-- Inline Styles for the Album Tabs & Galleries -->
+    <style>
+      /* Tab Container */
+      .tab-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Tabs */
+      .tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .site-footer{
+        font-size:20px;
+      }
+      .tabs button {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: background-color 0.3s;
+      }
+      .tabs button.active {
+        background-color: #007BFF;
+        color: #fff;
+      }
+
+      /* Sections for the tab content */
+      .section-content {
+        display: none; /* hidden by default */
+      }
+      .section-content.active {
+        display: block; /* show the active tab */
+      }
+
+      /* Gallery Grid: 3 images per row */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+        max-width: 900px;
+      }
+
+      /* Uniform image sizing */
+      .gallery img {
+        width: 100%;
+        aspect-ratio: 1 / 1; /* 1:1 square ratio; change if you prefer 16/9 or 4/3 */
+        object-fit: cover;   /* crops to fill the container without distortion */
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(3, 3, 3, 0.5);
+        padding: 20px;
+        transition: transform 0.3s ease;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Section Titles */
+      .section-content h2 {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 480px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Mobile Menu -->
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="site-nav">
+      <div class="container">
+        <div class="menu-bg-wrap">
+          <div class="site-navigation">
+            <a href="index.html" class="logo m-0 float-start">Album</a>
+
+            <ul
+              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="properties.html">Properties</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li class="active"><a href="album.html">Album</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <a
+              href="#"
+              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+              data-toggle="collapse"
+              data-target="#main-navbar"
+            >
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Optional Hero/Breadcrumb Section (Currently Empty) -->
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center1 mt-5">
+          <!-- Breadcrumb or Title can go here if desired -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Album Section -->
+    <div class="section">
+      <div class="container">
+        <div class="tab-container" data-aos="fade-up" data-aos-delay="100">
+          <!-- Tab Navigation -->
+          <div class="tabs">
+            <button class="tab-link active" data-tab="blueprint-section">
+              Blueprint
+            </button>
+            <button class="tab-link" data-tab="images-section">
+              Images
+            </button>
+            <button class="tab-link" data-tab="all-section">
+              All
+            </button>
+          </div>
+
+          <!-- Blueprint Section -->
+          <div id="blueprint-section" class="section-content active">
+            <div class="gallery">
+              <!-- Replace with your actual blueprint images -->
+              <img src="images/bl1.jpg" alt="Blueprint 1" />
+              <img src="images/bl2.jpg" alt="Blueprint 2" />
+              <img src="images/bl3.jpg" alt="Blueprint 3" />
+              <img src="images/bl4.jpg" alt="Blueprint 4" />
+              <img src="images/bl5.jpg" alt="Blueprint 5" />
+              <img src="images/bl6.jpg" alt="Blueprint 6" />
+            </div>
+          </div>
+
+          <!-- Images Section -->
+          <div id="images-section" class="section-content">
+            <div class="gallery">
+              <!-- Replace with your actual images -->
+              <img src="images/pic1.jpg" alt="Photo 1" />
+              <img src="images/pic2.jpg" alt="Photo 2" />
+              <img src="images/pic3.jpg" alt="Photo 3" />
+              <img src="images/pic4.jpg" alt="Photo 4" />
+              <img src="images/pic5.jpg" alt="Photo 5" />
+              <img src="images/pic6.jpg" alt="Photo 6" />
+              <img src="images/pic7.jpg" alt="Photo 7" />
+              <img src="images/pic8.jpg" alt="Photo 8" />
+              <img src="images/pic9.jpg" alt="Photo 9" />
+              <img src="images/pic10.jpg" alt="Photo 10" />
+              <img src="images/pic11.jpg" alt="Photo 11" />
+              <img src="images/pic12.jpg" alt="Photo 12" />
+            </div>
+          </div>
+
+          <!-- All Section (Both Blueprint and Images) -->
+          <div id="all-section" class="section-content">
+            <h2>Blueprint</h2>
+            <div class="gallery">
+              <img src="images/bl1.jpg" alt="Blueprint 1" />
+              <img src="images/bl2.jpg" alt="Blueprint 2" />
+              <img src="images/bl3.jpg" alt="Blueprint 3" />
+              <img src="images/bl4.jpg" alt="Blueprint 4" />
+              <img src="images/bl5.jpg" alt="Blueprint 5" />
+              <img src="images/bl6.jpg" alt="Blueprint 6" />
+            </div>
+            <h2>Images</h2>
+            <div class="gallery">
+              <img src="images/pic1.jpg" alt="Photo 1" />
+              <img src="images/pic2.jpg" alt="Photo 2" />
+              <img src="images/pic3.jpg" alt="Photo 3" />
+              <img src="images/pic4.jpg" alt="Photo 4" />
+              <img src="images/pic5.jpg" alt="Photo 5" />
+              <img src="images/pic6.jpg" alt="Photo 6" />
+              <img src="images/pic7.jpg" alt="Photo 7" />
+              <img src="images/pic8.jpg" alt="Photo 8" />
+              <img src="images/pic9.jpg" alt="Photo 9" />
+              <img src="images/pic10.jpg" alt="Photo 10" />
+              <img src="images/pic11.jpg" alt="Photo 11" />
+              <img src="images/pic12.jpg" alt="Photo 12" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Album Section -->
+
+    <!-- Footer -->
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>
+                No.111/2, Urumadampalayam,<br />
+                Thiruvalluvar Street,<br />
+                Coimbatore, India, 641029
+              </address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://09790027005">+91 97900 27005</a></li>
+                <li>
+                  <a href="mailto:kannikaabuilders2@gmail.com"
+                    >kannikaabuilders2@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./properties.html">Properties</a></li>
+                <li><a href="./services.html">Service</a></li>
+                <li><a href="./album.html">Album</a></li>
+                <li><a href="./album.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+              </ul>
+              
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Our Vision</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+              </ul>
+              <ul class="list-unstyled social">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100094177922463"
+                    ><span class="icon-facebook"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-pinterest"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-dribbble"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Removed the 'mt-5' class to reduce spacing here -->
+        <div class="row">
+          <div class="col-12 text-center1">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by
+              <a href="#">Kannika Land and Building Developers</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Theme JS Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Inline JS for Tab Functionality -->
+    <script>
+      const tabLinks = document.querySelectorAll('.tab-link');
+      const sections = document.querySelectorAll('.section-content');
+
+      tabLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          // Remove 'active' class from all tabs
+          tabLinks.forEach(item => item.classList.remove('active'));
+          // Hide all sections
+          sections.forEach(section => section.classList.remove('active'));
+
+          // Activate clicked tab & its corresponding section
+          link.classList.add('active');
+          const tabID = link.getAttribute('data-tab');
+          document.getElementById(tabID).classList.add('active');
+        });
+      });
+    </script>
+  </body>
+</html>
